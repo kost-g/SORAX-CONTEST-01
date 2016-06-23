@@ -35,7 +35,6 @@ body {
 	background-color: #f6f6f6;
 	margin: 0;
 	padding: 0;
-	max-width: 1350px;
 }
 
 a {
@@ -141,11 +140,14 @@ input.search-input:focus {
 
 .slider-area {
 	margin: 22px auto;
-	width: 1305px;
-	padding: 0;
+	padding: 0 40px;
 	text-align: center;
-	left: 15px;
 	position: relative;
+}
+
+.slider-area img {
+	width: 100%;
+	height:auto; 
 }
 
 a.left-button {
@@ -156,7 +158,8 @@ a.left-button {
 	font-weight: bold;
 	position: absolute;
 	top: 43%;
-	left: -0.5%;
+	left: 0%;
+	z-index: 1;
 }
 
 a.right-button {
@@ -167,11 +170,13 @@ a.right-button {
 	font-weight: bold;
 	position: absolute;
 	top: 43%;
-	right: -1%;
+	right: 0%;
+	z-index: 1;
 }
 
-.slider-area img {
-	width: 1225px;
+a.left-button:hover,
+a.right-button:hover {
+	color: black;
 }
 
 .main-title {
@@ -181,13 +186,7 @@ a.right-button {
 	z-index: 1;
 	top: 7.0%;
 	left: 29.2%;
-	width: 552px;
-	height: 552px;
-	border: 20px solid #f6f6f6;
-	border-radius: 50%;
 	padding: 0;
-	background-color: #ffffff;
-	box-shadow: 0 1px 1px 0 #000000;
 }
 
 .main-title h1 {
@@ -259,6 +258,11 @@ a.right {
 	color: #959595;
 }
 
+a.left:hover,
+a.right:hover {
+	color: black;
+}
+
 a.left {
 	margin-left: 915px;
 }
@@ -266,6 +270,7 @@ a.left {
 a.left {
 	margin-right: 5px;
 }
+
 .content1,
 .content2 {
 	padding-right: 10px;
