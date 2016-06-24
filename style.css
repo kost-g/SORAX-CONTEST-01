@@ -56,14 +56,12 @@ li {
 .first-line {
 	min-height: 80px;
 	background-color: #353c3e;
-	min-width: 1350px;
 }
 
 .second-line {
 	min-height: 65px;
 	background-color: #40494c;
 	border-bottom: 3px solid #040505;
-	min-width: 1350px;
 }
 
 .head-text p {
@@ -75,7 +73,7 @@ li {
 	font-weight: 500;
 }
 
-nav.first-men {
+.first-men {
 	float: left;
 }
 
@@ -157,7 +155,8 @@ a.left-button {
 	width: 40px;
 	font-weight: bold;
 	position: absolute;
-	top: 43%;
+	top: 50%;
+	margin-top: -35px;
 	left: 0%;
 	z-index: 1;
 }
@@ -169,7 +168,8 @@ a.right-button {
 	width: 40px;
 	font-weight: bold;
 	position: absolute;
-	top: 43%;
+	top: 50%;
+	margin-top: -35px;
 	right: 0%;
 	z-index: 1;
 }
@@ -184,9 +184,13 @@ a.right-button:hover {
 	position: absolute;
 	text-align: center;
 	z-index: 1;
-	top: 7.0%;
-	left: 29.2%;
-	padding: 0;
+	width: 370px;
+	height: 248px;
+	top: 50%;
+	left: 50%;
+	margin-left: -185px;
+	margin-top: -124px;
+	padding: 0 5px;
 }
 
 .main-title h1 {
@@ -195,8 +199,8 @@ a.right-button:hover {
 	color: #464646;
 	line-height: 43px;
 	font-weight: bold;
-	margin:137.0px 0 0 0;
 	letter-spacing: 0px;
+	z-index: 1;
 }
 
 span.orange {
@@ -205,14 +209,15 @@ span.orange {
 	color: #f26c4f;
 	line-height: 43px;
 	font-weight: bold;
-	margin:0px 0 0 0;
+	z-index: 1;
 }
 
 .main-title p {
 	font: 13px 'Montserrat', Arial, sans-serif;
 	color: #959595;
 	line-height: 22px;
-	margin: 33px 0 0 0;
+	margin: 15px 0 0 0;
+	z-index: 1;
 }
 
 /*--------------Content area-----------*/
@@ -220,7 +225,6 @@ span.orange {
 .data {
 	width: auto;
 	height: auto;
-	min-width: 1350px;
 	margin: 0;
 	padding:0;
 }
@@ -625,4 +629,36 @@ a.left {
 	width: 548px;
 	margin-top: 75px;
 	margin-left: 402px;
+}
+
+/*------Media queris-----*/
+
+
+@media screen and (max-width: 1025px) {
+.main-title h1 {
+	font: 41px 'Montserrat', Arial, sans-serif;
+	text-transform: uppercase;
+	color: #464646;
+	line-height: 43px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	z-index: 1;
+}
+
+span.orange {
+	font: 41px 'Montserrat', Arial, sans-serif;
+	text-transform: uppercase;
+	color: #f26c4f;
+	line-height: 43px;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.main-title p {
+	font: 12px 'Montserrat', Arial, sans-serif;
+	color: #959595;
+	line-height: 22px;
+	margin: 15px 0 0 0;
+	z-index: 1;
+}
 }
